@@ -3,4 +3,5 @@ fileInput.addEventListener("change", function() {
     let file = fileInput.files[0];
     let reader = new FileReader();
     reader.readAsArrayBuffer(file);
+    reader.onload = function(event) {
 });
